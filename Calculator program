@@ -1,0 +1,60 @@
+#include <stdio.h>
+int main()
+{
+    char opt;
+    int n1,n2;
+    float res;
+    printf("choose an operator(+,-,*,/) to perform the operation inC calculator ");
+    scanf("%c", &opt);
+    if (opt == '/')
+    {
+        printf("you have selected division");
+    }
+    else if (opt == '*')
+    {
+        printf ("you have selected multiplication");
+    }
+
+    else if (opt == '-')
+    {
+        printf("you have selected subtraction");
+    }
+    else if (opt == '+')
+        printf("you have selected addition");
+    }
+    printf("Enter the first number \n1 ");
+    scanf("%d",&n1);
+    printf("Enter the second number");
+    scanf("%d",&n2);
+
+    switch(opt)
+    {
+        case '+'
+         res=n1+n2;
+         printf("Addition of %d and %d is: %2f",n1,n2,res);
+         break,
+
+        case '-'
+         res=n1-n2;
+         printf("Subtraction of %d and %d is: %2f",n1,n2,res);
+         break,
+
+        case '*'
+         res=n1*n2;
+         printf("Multiplication of %d and %d is: %2f",n1,n2,res);
+         break,
+
+        case '/'
+         if(n2==0)
+        {
+            printf("\n Divisor cannot be zero. Please enter another value");
+            scanf("%d", &n2);
+            }
+         res=n1/n2
+         printf("Division of %d and %d is: %2f",n1,n2,res);
+         break;
+        default:
+         printf("something is wrong!! Error found")
+    }
+    return 0;
+}
